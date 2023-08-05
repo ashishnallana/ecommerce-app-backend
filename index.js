@@ -11,7 +11,10 @@ const port = process.env.PORT || 3001;
 require("./db/connection");
 
 // *cors
-const allowedOrigins = ["http://localhost:3000"];
+const allowedOrigins = [
+  "http://localhost:3000",
+  "https://ecommerce-app-a7347.web.app",
+];
 
 const corsOptions = {
   origin: (origin, callback) => {
